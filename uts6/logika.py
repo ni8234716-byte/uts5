@@ -19,3 +19,29 @@ def tentukan_kategori(nilai):
         return "E"
     else:
         return "Nilai tidak valid"
+
+def konversi_nilai(huruf):
+    huruf = huruf.lower()
+
+    if huruf == "a":
+        return 4
+    elif huruf == "a-":
+        return 3.75
+    elif huruf == "a+":
+        return 3.5
+    elif huruf == "b+":
+        return 3
+    elif huruf == "b":
+        return 2.75
+    elif huruf == "b-":
+        return 2.5
+    elif huruf == "c+":
+        return 2
+    elif huruf == "c":
+        return 1
+    elif huruf == "d":
+        return 1
+    elif huruf == "e":
+        return 0
+    else:
+        return None
